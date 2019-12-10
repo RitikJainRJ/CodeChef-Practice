@@ -1,8 +1,9 @@
 #include <bits/stdc++.h>
+#define ll unsigned long long
 using namespace std;
 
 int bearSpecies(int);
-void _bearSpecies(char**, int**, int, int&);
+void _bearSpecies(char**, int**, int, ll&);
 bool findPosition(char**, int**, int&, int&, int);
 bool isSafe(int, int, int, char**, int**, int);
 
@@ -18,7 +19,7 @@ int main(void){
 }
 
 int bearSpecies(int n){
-    int res = 0;
+    ll res = 0;
     int flag = 0;
     char **arr = new char*[n];
     int **sol = new int*[n];
@@ -53,7 +54,7 @@ bool findPosition(char **arr, int **sol, int &row, int &col, int n){
     return false;
 }
 
-void _bearSpecies(char **arr, int **sol, int n, int &res){
+void _bearSpecies(char **arr, int **sol, int n, ll &res){
     int row, col;
     if(!findPosition(arr, sol, row, col, n)){
         res = (res + 1) % 1000000007;
