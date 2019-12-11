@@ -15,10 +15,10 @@ int main(void){
     res = a - b;
     temp = to_string(res);
     n = temp.length();
-    if(temp[n - 1] == 0)
-        temp[n - 1] = temp[n - 1] + 1;
-    else
+    if(temp[n - 1] == '9')
         temp[n - 1] = temp[n - 1] - 1;
+    else
+        temp[n - 1] = temp[n - 1] + 1;
     cout << temp << endl;
     return 0;
 }
