@@ -1,3 +1,17 @@
+/*
+As New Year is approaching, Salik is studying functions in order to sharpen his math skills.
+Instead of regular functions, he is studying a strange function F which operates on non-negative integers.
+The value of F(A) is obtained by the following process:
+
+    Compute the sum of digits of A; let's denote this sum by S.
+    If S is a single-digit integer, then F(A) = S.
+    Otherwise, F(A) = F(S).
+
+It's guaranteed that this process correctly defines the function F.
+
+Since this problem was pretty straightforward, he invented a new problem:
+Given two integers A and N, compute F(AN). Can you help him solve this task?
+*/
 #include<bits/stdc++.h>
 #define ll unsigned long long
 using namespace std;
